@@ -1,6 +1,6 @@
 databases:
-  - name: bookme
-    databaseName: bookme_app_db
+  - name: Bookme-app-db
+    databaseName: Bookme-app-db
     user: tibi
 
 services:
@@ -12,7 +12,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: bookme_app_db
+          name: Bookme-app-db
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
