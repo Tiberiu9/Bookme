@@ -20,9 +20,9 @@ services:
       - key: RAILS_MASTER_KEY
         sync: false
     plan: free
-  - type: redis
-    name: redis-bookme
-    region: frankfurt
-    ipAllowList: []
-    plan: free
-    maxmemoryPolicy: noeviction
+  # - type: redis
+  #   name: redis-bookme
+  #   region: frankfurt
+  #   ipAllowList: []
+  #   plan: free
+  #   maxmemoryPolicy: noeviction
