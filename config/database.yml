@@ -84,6 +84,6 @@ test:
 production:
   <<: *default
   url: <%= ENV["DATABASE_URL"] %>
-  database: bookme_demo_production
+  database: bookme_app_db_production
   username: tibi
-  password: <%= ENV["BOOKME_DEMO_DATABASE_PASSWORD"] %>
+  password: <%= ENV["BOOKME_APP_DB_DATABASE_PASSWORD"] %>
