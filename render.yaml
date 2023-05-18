@@ -1,6 +1,6 @@
 databases:
   - name: Bookme-app-db
-    databaseName: Bookme-app-db
+    databaseName: bookme_app_db
     user: tibi
 
 services:
