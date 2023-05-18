@@ -3,13 +3,15 @@ databases:
     databaseName: bookme_app_db
     user: tibi
     plan: free
+    region: frankfurt
 
 services:
   - type: web
-    name: bookme
+    name: bookme-app
     env: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec rails s
+    region: frankfurt
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -19,7 +21,8 @@ services:
         sync: false
     plan: free
   - type: redis
-    name: redis
+    name: redis-bookme
+    region: frankfurt
     ipAllowList: []
     plan: free
     maxmemoryPolicy: noeviction
