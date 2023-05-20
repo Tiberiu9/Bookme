@@ -83,7 +83,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
   database: bookme_demo_production
   username: tibi
   password: <%= ENV["BOOKME_DEMO_DATABASE_PASSWORD"] %>
