@@ -80,3 +80,5 @@ gem "stripe"
 gem "tailwindcss-rails", "~> 2.0"
 
 gem 'solargraph', '~> 0.49.0'
+
+gem "dockerfile-rails", ">= 1.3", :group => :development
